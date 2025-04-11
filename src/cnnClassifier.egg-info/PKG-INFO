@@ -1,0 +1,35 @@
+Metadata-Version: 1.2
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/YemineniPavan/kidney_tumor_classification
+Author: YemineniPavan
+Author-email: yeminenipavan27@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/YemineniPavan/kidney_tumor_classification/issues
+Description: # kidney_tumor_classification
+        
+        # How to run?
+        ### STEPS:
+        
+        Clone the repository
+        
+        ```bash
+        https://github.com/YemineniPavan/kidney_tumor_classification
+        ```
+        ### STEP 01- Create a conda environment after opening the repository
+        
+        ```bash
+        python -m venv kidney
+        ```
+        
+        ```bash
+        kidney\Scripts\activate
+        ```
+        
+        
+        ### STEP 02- install the requirements
+        ```bash
+        pip install -r requirements.txt
+        ```
+Platform: UNKNOWN
