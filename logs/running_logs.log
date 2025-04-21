@@ -262,3 +262,147 @@ x========x]
 [2025-04-16 21:38:04,753: INFO: _internal: 127.0.0.1 - - [16/Apr/2025 21:38:04] "GET / HTTP/1.1" 200 -]
 [2025-04-16 21:38:32,988: INFO: _internal: 127.0.0.1 - - [16/Apr/2025 21:38:32] "POST /predict HTTP/1.1" 200 -]
 [2025-04-16 21:39:02,145: INFO: _internal: 127.0.0.1 - - [16/Apr/2025 21:39:02] "POST /predict HTTP/1.1" 200 -]
+[2025-04-21 09:56:24,444: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.26.47.183:8080]
+[2025-04-21 09:56:24,444: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-21 09:56:41,464: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 09:56:41] "GET / HTTP/1.1" 200 -]
+[2025-04-21 09:56:59,245: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 09:56:59] "POST /predict HTTP/1.1" 200 -]
+[2025-04-21 09:57:53,764: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 09:57:53] "POST /predict HTTP/1.1" 200 -]
+[2025-04-21 09:58:08,033: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 09:58:08] "POST /predict HTTP/1.1" 200 -]
+[2025-04-21 09:58:15,559: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 09:58:15] "POST /predict HTTP/1.1" 200 -]
+[2025-04-21 09:59:01,707: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-04-21 09:59:01,707: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 09:59:01,707: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 09:59:01,707: INFO: common: created directory at: artifacts]
+[2025-04-21 09:59:01,723: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-21 09:59:01,723: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Dx0mwyILj0pcASM5eNdbzvNiuQgtQMP/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2025-04-21 10:00:34,604: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Dx0mwyILj0pcASM5eNdbzvNiuQgtQMP/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2025-04-21 10:00:48,302: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x========x]
+[2025-04-21 10:00:48,302: INFO: main: >>>>>> stage Prepare Base Model started <<<<<<]
+[2025-04-21 10:00:48,318: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 10:00:48,324: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 10:00:48,324: INFO: common: created directory at: artifacts]
+[2025-04-21 10:00:48,324: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-21 10:00:49,101: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-21 10:00:49,448: INFO: main: >>>>>> stage Prepare Base Model completed <<<<<<
+
+x========x]
+[2025-04-21 10:00:49,448: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-21 10:00:49,448: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 10:00:49,464: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 10:00:49,464: INFO: common: created directory at: artifacts]
+[2025-04-21 10:00:49,464: INFO: common: created directory at: artifacts\training]
+[2025-04-21 10:17:14,390: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x========x]
+[2025-04-21 10:17:14,390: INFO: main: >>>>>> stage Evaluation Stage started <<<<<<]
+[2025-04-21 10:17:14,390: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 10:17:14,390: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 10:17:14,390: INFO: common: created directory at: artifacts]
+[2025-04-21 10:22:53,025: INFO: common: json file saved at: scores.json]
+[2025-04-21 10:22:53,026: INFO: main: >>>>>> stage Evaluation Stage completed <<<<<<
+
+x========x]
+[2025-04-21 10:41:03,543: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.26.47.183:8080]
+[2025-04-21 10:41:03,543: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-21 10:41:12,708: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 10:41:12] "GET / HTTP/1.1" 200 -]
+[2025-04-21 10:41:40,570: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 10:41:40] "POST /predict HTTP/1.1" 200 -]
+[2025-04-21 10:41:54,174: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 10:41:54] "POST /predict HTTP/1.1" 200 -]
+[2025-04-21 10:42:05,580: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 10:42:05] "POST /predict HTTP/1.1" 200 -]
+[2025-04-21 10:42:16,170: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 10:42:16] "POST /predict HTTP/1.1" 200 -]
+[2025-04-21 10:42:27,926: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001A712F5E820> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-04-21 10:42:27,926: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 10:42:27] "POST /predict HTTP/1.1" 200 -]
+[2025-04-21 10:42:41,346: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001A71335B9D0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-04-21 10:42:41,362: INFO: _internal: 127.0.0.1 - - [21/Apr/2025 10:42:41] "POST /predict HTTP/1.1" 200 -]
+[2025-04-21 10:48:26,378: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-04-21 10:48:26,378: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 10:48:26,378: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 10:48:26,378: INFO: common: created directory at: artifacts]
+[2025-04-21 10:48:26,378: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-21 10:48:26,378: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Dx0mwyILj0pcASM5eNdbzvNiuQgtQMP/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2025-04-21 10:49:59,416: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Dx0mwyILj0pcASM5eNdbzvNiuQgtQMP/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2025-04-21 10:50:09,425: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x========x]
+[2025-04-21 10:50:09,426: INFO: main: >>>>>> stage Prepare Base Model started <<<<<<]
+[2025-04-21 10:50:09,437: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 10:50:09,442: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 10:50:09,444: INFO: common: created directory at: artifacts]
+[2025-04-21 10:50:09,446: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-21 10:50:10,633: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-21 10:50:10,907: INFO: main: >>>>>> stage Prepare Base Model completed <<<<<<
+
+x========x]
+[2025-04-21 10:50:10,907: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-21 10:50:10,910: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 10:50:10,912: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 10:50:10,912: INFO: common: created directory at: artifacts]
+[2025-04-21 10:50:10,912: INFO: common: created directory at: artifacts\training]
+[2025-04-21 13:54:38,470: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 13:54:38,476: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 13:54:38,476: INFO: common: created directory at: artifacts]
+[2025-04-21 13:54:38,476: INFO: common: created directory at: artifacts\training]
+[2025-04-21 14:26:57,581: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-04-21 14:26:57,582: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 14:26:57,586: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 14:26:57,586: INFO: common: created directory at: artifacts]
+[2025-04-21 14:26:57,586: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-21 14:26:57,586: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Dx0mwyILj0pcASM5eNdbzvNiuQgtQMP/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2025-04-21 14:29:25,925: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Dx0mwyILj0pcASM5eNdbzvNiuQgtQMP/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2025-04-21 14:29:40,457: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x========x]
+[2025-04-21 14:29:40,458: INFO: main: >>>>>> stage Prepare Base Model started <<<<<<]
+[2025-04-21 14:29:40,461: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 14:29:40,463: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 14:29:40,463: INFO: common: created directory at: artifacts]
+[2025-04-21 14:29:40,464: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-21 14:29:41,529: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-21 14:29:41,899: INFO: main: >>>>>> stage Prepare Base Model completed <<<<<<
+
+x========x]
+[2025-04-21 14:29:41,900: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-21 14:29:41,905: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 14:29:41,906: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 14:29:41,907: INFO: common: created directory at: artifacts]
+[2025-04-21 14:29:41,907: INFO: common: created directory at: artifacts\training]
+[2025-04-21 14:29:41,908: ERROR: main: __init__() missing 1 required positional argument: 'params_fine_tune']
+Traceback (most recent call last):
+  File "D:\kidney_tumor_classification\main.py", line 35, in <module>
+    obj.main()
+  File "d:\kidney_tumor_classification\src\cnnClassifier\pipeline\stage_03_model_training.py", line 14, in main
+    training_config =config.get_training_config()
+  File "d:\kidney_tumor_classification\src\cnnClassifier\config\configuration.py", line 61, in get_training_config
+    training_config =TrainingConfig(
+TypeError: __init__() missing 1 required positional argument: 'params_fine_tune'
+[2025-04-21 14:33:16,394: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-04-21 14:33:16,394: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 14:33:16,394: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 14:33:16,394: INFO: common: created directory at: artifacts]
+[2025-04-21 14:33:16,394: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-21 14:33:16,394: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Dx0mwyILj0pcASM5eNdbzvNiuQgtQMP/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2025-04-21 14:35:42,253: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Dx0mwyILj0pcASM5eNdbzvNiuQgtQMP/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2025-04-21 14:35:53,127: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x========x]
+[2025-04-21 14:35:53,127: INFO: main: >>>>>> stage Prepare Base Model started <<<<<<]
+[2025-04-21 14:35:53,127: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 14:35:53,127: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 14:35:53,133: INFO: common: created directory at: artifacts]
+[2025-04-21 14:35:53,133: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-21 14:35:53,813: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-21 14:35:54,153: INFO: main: >>>>>> stage Prepare Base Model completed <<<<<<
+
+x========x]
+[2025-04-21 14:35:54,153: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-21 14:35:54,153: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 14:35:54,163: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 14:35:54,163: INFO: common: created directory at: artifacts]
+[2025-04-21 14:35:54,163: INFO: common: created directory at: artifacts\training]

@@ -30,7 +30,7 @@ class TrainingConfig:
     params_batch_size: int
     params_is_augmentation: bool
     params_image_size: list    
-    
+    params_fine_tune: bool
     
 @dataclass(frozen=True)
 class EvaluationConfig:
